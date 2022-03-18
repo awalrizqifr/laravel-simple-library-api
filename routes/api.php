@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\BookController;
 use App\Http\Controllers\Api\StudentController;
+use App\Http\Controllers\Api\TransactionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::apiResource('books', BookController::class);
 Route::apiResource('students', StudentController::class);
+Route::apiResource('transactions', TransactionController::class);
