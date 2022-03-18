@@ -21,6 +21,11 @@ class BookController extends Controller
         return new BookResource($book);
     }
 
+    public function show(Book $book)
+    {
+        return new BookResource($book);
+    }
+
     public function update(Book $book, BookRequest $request)
     {
         $book->update($request->validated());
