@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::apiResource('/books', BookController::class)->except('show');
+Route::apiResource('books', BookController::class)->except('show');
