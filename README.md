@@ -4,7 +4,7 @@ Clone the repo locally:
 
 ```sh
 git clone https://github.com/awalrizqifr/mini-library-api.git
-cd money-manager-api
+cd mini-library-api
 ```
 
 Install PHP dependencies:
