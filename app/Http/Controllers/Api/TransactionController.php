@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TransactionRequest;
 use App\Http\Resources\TransactionResource;
+use App\Http\Resources\TransactionShowResource;
 use App\Models\Transaction;
 
 class TransactionController extends Controller
@@ -23,7 +24,7 @@ class TransactionController extends Controller
 
     public function show(Transaction $transaction)
     {
-        return new TransactionResource($transaction);
+        return new TransactionShowResource($transaction);
     }
 
     public function update(Transaction $transaction, TransactionRequest $request)
